@@ -9,6 +9,7 @@ function Square({value, onSquareClick}) {
   );
 }
 
+
 function Board({ xIsNext, squares, onPlay }) {
   function handleClick(i) {
     if (calculateWinner(squares) || squares[i]) {
@@ -96,6 +97,7 @@ export default function Game() {
     </div>
   );
 }
+// to get winner
 
 function calculateWinner(squares) {
   const lines = [
